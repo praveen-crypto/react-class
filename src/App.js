@@ -1,8 +1,8 @@
 
 import './App.css';
 
-//import Button from './components/button/button';
-import ConditionalRendering  from './components/conditonal_rendering/PackingList';
+import Button from './components/button/button';
+import ConditionalRendering from './components/conditonal_rendering/PackingList';
 
 function App() {
 
@@ -23,8 +23,6 @@ function App() {
     }
   ]
 
-  
-
   return (
 
     <div className="App" >
@@ -35,17 +33,31 @@ function App() {
         }
       </h3>
 
-      {/* Show here */}
-
-      <hr></hr>
-
       {/* Conditional Rendering */}
-      
+      <h3>Conditional Rendering</h3>
       <ConditionalRendering data={packingList} />
 
+
+      <h3>Interactivity</h3>
+      <Button name="Click Me" onClick={onClick1} />
+
+      <Button name="Click Me 2" onClick={onClick2} />
+      
     </div>
 
   );
+}
+
+function onClick1() {
+
+  alert("Button 1 clicked!!");
+
+}
+
+function onClick2() {
+
+  alert("Button 2 clicked!!");
+
 }
 
 export default App;
