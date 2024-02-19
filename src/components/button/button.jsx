@@ -9,7 +9,7 @@ function Button(props) {
 
     return (
         <>
-            <button className="btn" onClick={props.onClick} >
+            <button className="btn"  onClick={props.onClick} >
                 {props.name}
             </button>
         </>
