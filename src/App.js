@@ -1,8 +1,11 @@
 
+import { useState } from 'react';
 import './App.css';
 
-import Button from './components/button/button';
+// import Button from './components/button/button';
 import ConditionalRendering from './components/conditonal_rendering/PackingList';
+
+import Button from '@mui/material/Button';
 
 function App() {
 
@@ -23,31 +26,38 @@ function App() {
     }
   ]
 
+  const [value, setValue] = useState(0);
+
+  function onClick1(e) {
+  
+    e.stopPropagation();
+    
+    e.preventDefault();
+    
+    console.log("Click Me Button Clicked", e);
+    
+    setValue( value + 10 );
+    
+  }
+
   return (
 
     <div className="App" >
 
-      <h3>
-        {
-          age > 20 & age < 40 ? "Student" : age > 40 ? "Employee" : "Unknown"
-        }
-      </h3>
-      
-      {/* Conditional Rendering */}
-      {/* <h3>Conditional Rendering</h3>
-      <ConditionalRendering data={packingList} /> */}
-
       <div onClick={parentOnClick}>
         <h3>Interactivity</h3>
-        <Button name="Click Me" onClick={onClick1} />
         
-        <Button name="Click Me 2" onClick={onClick2} />
+        <Button variant="outlined" onClick={onClick1} >Click Me</Button>
+        <Button variant="contained" onClick={onClick2}>Click Me 2</Button>
       </div>
-      
-      <form>
 
-        <button type='submit' onClick={onClick1} >submit</button>
-      </form>
+      <p>
+        Button Clicked {value} times
+      </p>
+      
+      <div>
+        
+      </div>
 
     </div>
 
@@ -61,17 +71,7 @@ function parentOnClick(e) {
 
 }
 
-function onClick1(e) {
-  
-  e.stopPropagation();
-  
-  e.preventDefault();
-  
-  console.log("Click Me Button Clicked", e);
 
-  // alert("Button 1 clicked!!");
-
-}
 
 function onClick2() {
 
