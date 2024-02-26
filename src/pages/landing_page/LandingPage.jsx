@@ -8,7 +8,7 @@ import {Button} from "@mui/material";
 import heroLeft from './home-left.png';
 
 function LandingPage() {
-
+    
     return (
         <main className=''>
             <Navbar />

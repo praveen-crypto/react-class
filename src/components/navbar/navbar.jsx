@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 import './navbar.css';
 
 function Navbar() {
@@ -22,19 +16,19 @@ function Navbar() {
                             <a href="/"> HOME </a>
                         </li>
                         <li>
-                            <a href="/"> ABOUT </a>
+                            <a href="/about"> ABOUT </a>
                         </li>
                         <li>
-                            <a href="/"> SERVICES </a>
+                            <a href="/services"> SERVICES </a>
                         </li>
                         <li>
-                            <a href="/"> PAGES </a>
+                            <a href="/pages"> PAGES </a>
                         </li>
                         <li>
-                            <a href="/"> BLOG </a>
+                            <a href="/blog"> BLOG </a>
                         </li>
                         <li>
-                            <a href="/"> CONTACT </a>
+                            <a href="/contact"> CONTACT </a>
                         </li>
                     </ul>
                 </div>
