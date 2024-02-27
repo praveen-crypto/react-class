@@ -1,13 +1,12 @@
+import PreviousState from "../../components/PreviousState";
 
-
-function Home(){
+function Home() {
 
     return (
         <>
-            Home Page
+            <PreviousState/>
         </>
     )
 }
 
 export default Home;
-

@@ -4,7 +4,6 @@ import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
 
-
 import Home from './pages/home/home';
 import About from './pages/about/about';
 import Navbar from './components/navbar/navbar';
@@ -14,7 +13,7 @@ function App() {
   const time = useTime();
   
   return (
-
+    
     <div className="App" >
       <Navbar />
 
@@ -24,18 +23,21 @@ function App() {
       </Routes>
 
     </div>
-
   );
+
 }
 
 function useTime() {
   const [time, setTime] = useState(() => new Date());
 
   useEffect(() => {
+    
     const id = setInterval(() => {
       setTime(new Date());
     }, 1000);
+    
     return () => clearInterval(id);
+    
   }, []);
 
   return time;
