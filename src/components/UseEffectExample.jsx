@@ -1,19 +1,17 @@
 import { useEffect } from "react"
 
 
-function UseEffectExample({value}) {
+function UseEffectExample({ value, name }) {
 
-    useEffect( () => {
+    useEffect(() => {
 
         document.title = `Updated ${value} times.`;
 
-    }, [value] )
-
-    
+    }, [value])
 
     return (
         <div>
-            
+            <h3>Name is {name}. Printing from UseEffec Component.</h3>
         </div>
     )
 }
