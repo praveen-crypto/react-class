@@ -2,7 +2,7 @@ import { useState } from "react";
 import PreviousState from "../../components/PreviousState";
 
 import UseContextExample from "../../components/UseContextExample";
-
+import Form from "../../components/Forms/Form";
 
 function Home() {
 
@@ -10,9 +10,11 @@ function Home() {
 
     return (
         <>
-            <PreviousState name1={name}  />
+            {/* <PreviousState name1={name}  />
 
-            <UseContextExample />
+            <UseContextExample /> */}
+
+            <Form />
         </>
     )
 }
