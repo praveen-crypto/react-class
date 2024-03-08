@@ -14,9 +14,8 @@ function ControlledForm() {
             <h3>Controlled Form </h3>
             <label>
                 Name:
-                <input type="text" value={name} onChange={e => setName(e.target.value)} />
+                <input type="text" value={name} onChange={e => setName(e.target.value) } />
             </label>
-            
         </form>
     );
 }

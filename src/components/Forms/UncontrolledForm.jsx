@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 function UncontrolledForm() {
   const nameInputRef = useRef();
-
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('A name was submitted: ' + nameInputRef.current.value);

@@ -3,6 +3,7 @@ import PreviousState from "../../components/PreviousState";
 
 import UseContextExample from "../../components/UseContextExample";
 import Form from "../../components/Forms/Form";
+import DataTable from "../../components/API/datatable";
 
 function Home() {
 
@@ -14,7 +15,9 @@ function Home() {
 
             <UseContextExample /> */}
 
-            <Form />
+            {/* <Form /> */}
+
+            <DataTable></DataTable>
         </>
     )
 }
